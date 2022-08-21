@@ -22,6 +22,7 @@
             margin: 0px;
             background: url(Images/gymMan.jpg);
             color: white;
+            overflow-y: hidden;
         }
 
         .header {
@@ -54,19 +55,16 @@
 
         .navbar {
             display: inline-block;
-
-
         }
 
         .navbar li {
             display: inline-block;
             font-size: 20px;
-
         }
 
         .navbar li a {
             color: white;
-            padding: 34px 23px;
+            padding: 20px;
             text-decoration: none;
             word-wrap: break-word;
         }
@@ -89,12 +87,10 @@
         }
 
         .search {
-
             padding: 6px;
             margin-top: 8px;
             font-size: 17px;
             border: none;
-
         }
 
         .searchBtn {
@@ -104,7 +100,6 @@
             font-size: 17px;
             border: none;
             cursor: pointer;
-
         }
 
         .searchBtn:hover {
@@ -113,11 +108,12 @@
 
         .container {
             border: 2px solid whitesmoke;
-            margin: 100px 30px;
-            padding: 75px;
+            margin: 60px 30px;
+            padding: 25px;
             width: 40%;
             border-radius: 17px;
             box-shadow: 0 0 20px black;
+
         }
 
         .container h1 {
@@ -146,7 +142,6 @@
 
         }
 
-
         .form-group input {
             font-family: 'Baloo Bhai 2', cursive;
             margin: 14px auto;
@@ -160,6 +155,100 @@
 
         .searchBtn-2:hover {
             background: rgb(22, 22, 22);
+        }
+
+        @media screen and (max-width:1400px) {
+            .navbar li a {
+                margin-right: -20px;
+            }
+        }
+        @media screen and (max-width:1120px) {
+            .navbar {
+                margin-left: -26%;
+            }
+            .navbar li a:hover{
+                margin-left: -70px;
+            }
+        }
+        @media screen and (max-width:1000px) {
+            .form-group input {
+                font-size: 13px;
+                width: 100%;
+            }
+            .container {
+                width: 33%;
+            }
+            .searchBtn-2 {
+                width:100%;
+            }
+        }
+        @media screen and (max-width:850px) {
+            .container h1 {
+                font-size: 22px;
+            }
+            .container{
+                margin: auto;
+                margin-top: 55px;
+            }
+            .navbar {
+                margin-left: -61%;
+            }
+        }
+        
+        @media screen and (max-width:780px) {
+            .container{
+                margin-top: 130px;
+            }
+            .searchBtn , .search {
+                font-size: 13px;
+            }
+        }
+        @media screen and (max-width:680px) {
+            .navbar {
+                margin-left: -22%;
+            }
+            .searchBtn ,.search{
+                font-size: 9px;
+            }
+        }
+        @media screen and (max-width:495px) {
+            .container h1 {
+                font-size: 18px;
+            }
+            .form-group input {
+                font-size: 11px;
+            }
+            .navbar li {
+                list-style: none;  
+                /* font-size: 30%;  */
+            }
+            .searchBtn ,.search{
+                font-size: 8px;
+            }
+            .container{
+                margin-top: 60px;
+            }
+            .navbar li a {
+                margin-right: -5px;
+            }
+        }
+        @media screen and (max-width:370px) {
+            
+            .searchBtn ,.search{
+                font-size: 5px;
+            }
+            .navbar li a{
+                font-size: 15px;
+            }
+            .logo {
+                width: 60px;
+            }
+            .left div {
+                font-size: 15px;
+            }
+            .navbar {
+                margin-left: -40%;
+            }
         }
     </style>
 
@@ -178,7 +267,7 @@
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">BMI</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">ContactUs</a></li>
             </ul>
         </div>
 
