@@ -55,10 +55,9 @@ a:hover {
 .myself {
     margin: 60px;
     padding: 5px;
-    font-family: cursive;
+    font-family: Verdana, sans-serif;
     line-height: 30px;
     font-size: 15px;
-    /* font-family: Verdana, sans-serif; */
 }
 
 .moreoverMyself {
@@ -66,8 +65,7 @@ a:hover {
     padding: 5px;
     line-height: 33px;
     font-size: 15px;
-    font-family: cursive;
-    /* font-family: Verdana, sans-serif; */
+    font-family: Verdana, sans-serif;
 }
 
 #moreoverMyselfPara {
@@ -205,7 +203,7 @@ a:hover {
 #projectsAbout {
     padding: 20px;
     text-align: justify;
-    font-family: cursive;
+    font-family: Verdana, sans-serif;
     font-size: 1.1rem;
 }
 
