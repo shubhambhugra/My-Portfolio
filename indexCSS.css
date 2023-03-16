@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* margin-right: 3px; */
     overflow-x: hidden;
 }
 
@@ -56,17 +55,23 @@ a:hover {
 .myself {
     margin: 60px;
     padding: 5px;
+    font-family: cursive;
     line-height: 30px;
     font-size: 15px;
-    font-family: Verdana, sans-serif;
+    /* font-family: Verdana, sans-serif; */
 }
 
 .moreoverMyself {
     margin: 10px;
     padding: 5px;
-    line-height: 27px;
+    line-height: 33px;
     font-size: 15px;
-    font-family: Verdana, sans-serif;
+    font-family: cursive;
+    /* font-family: Verdana, sans-serif; */
+}
+
+#moreoverMyselfPara {
+    font-size: 18px;
 }
 
 /* my skills CSS */
@@ -74,6 +79,7 @@ a:hover {
 .skillhead {
     font-size: 30px;
     color: #111;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 
@@ -92,14 +98,77 @@ a:hover {
 
 .skills {
     text-align: right;
-    /* padding-top: 5px; */
-    /* padding-bottom: 5px; */
     color: white;
     font-weight: bold;
     background-color: rgba(231, 35, 35, 0.909);
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Experience */
+
+.experience .box-container {
+    display: block;
+}
+
+.experience .box-container .box {
+    position: relative;
+    border-left: .2rem solid red;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.experience .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: red;
+}
+
+.experience .box-container .box .content {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 0 2.2rem rgba(0, 0, 0, 0.4);
+    border-radius: .5rem;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.experience .box-container .box .content:hover {
+    background: #ffb1b1;
+    color: #fff;
+}
+
+.experience .box-container .box .content span {
+    color: #fff;
+    font-size: 100%;
+    text-transform: uppercase;
+    background: red;
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+
+.experience .box-container .box .content h3 {
+    font-size: 150%;
+    padding: .5rem 0;
+    color: #111;
+}
+
+#experPara {
+    font-size: 110%;
+    line-height: 31px;
+    color: #666;
+}
+
+/* --------------------------------------- */
 
 .mybox p {
     font-weight: bold;
@@ -127,23 +196,43 @@ a:hover {
 }
 
 /* Projects CSS */
+
+.projects2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#projectsAbout {
+    padding: 20px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 1.1rem;
+}
+
+.projects2-1 {
+    padding-top: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 50%;
+    margin: 10px;
+}
+
+.projects2-1 a img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 0px 170px;
+}
+
+.projects2-1 a {
+    text-decoration: none;
+    color: black;
+}
+
 .projects a img {
     margin-left: 80px;
     width: 35%;
     float: left;
     height: 250px;
-    box-shadow: 0px 0px 20px 1px black;
-}
-
-#second2 {
-    margin-left: 135px;
-}
-
-.projects2 a img {
-    margin-left: 80px;
-    width: 33%;
-    float: left;
-    height: 15%;
     box-shadow: 0px 0px 20px 1px black;
 }
 
@@ -212,8 +301,7 @@ a:hover {
         font-size: 14px;
     }
 
-    .projects a img,
-    .projects2 a img {
+    .projects a img {
         float: right;
         margin: 10px;
         width: 50%;
@@ -246,8 +334,17 @@ a:hover {
         position: relative;
     }
 
-    .projects a img,
-    .projects2 a img {
+    .projects2-1 a img {
+        width: 95%;
+    }
+
+    #projectsAbout {
+        padding: 14px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .projects a img {
         float: right;
         margin: 10px;
         width: 70%;
@@ -265,8 +362,26 @@ a:hover {
         font-size: 11px;
     }
 
-    .moreoverMyself p {
+    #moreoverMyselfPara {
         margin-right: 25px;
+    }
+
+    .experience .box-container .box {
+        padding-right: 1rem;
+    }
+
+    .experience .box-container .box .content span {
+        font-size: 85%;
+    }
+
+    .experience .box-container .box .content h3 {
+        font-size: 105%;
+    }
+
+    #experPara {
+        margin-right: 0;
+        font-size: 95%;
+        line-height: 22px;
     }
 
     .footer {
@@ -302,6 +417,24 @@ a:hover {
         width: 88.5%;
     }
 
+    .experience .box-container {
+        width: 90%;
+    }
+
+    .experience .box-container .box .content {
+        padding: 0.9rem;
+    }
+
+    .projects2 {
+        display: inline-block;
+    }
+
+    .projects2-1 {
+        box-shadow: 0 0 10px grey;
+        width: 80%;
+        border-radius: 2%;
+    }
+
     .projects3 {
         width: 82%;
         margin-left: 14px;
@@ -312,7 +445,7 @@ a:hover {
         margin-right: 25px;
     }
 
-    #myh5 {
+    #myh4 {
         font-size: 11px;
         margin-right: 25px;
     }
@@ -336,6 +469,10 @@ a:hover {
         padding: 2px;
     }
 
+    .experience .box-container {
+        width: 100%;
+    }
+
     .myself {
         margin: 15px;
         font-size: 9.2px;
@@ -347,8 +484,11 @@ a:hover {
         margin-left: 18px;
     }
 
-    .projects a img,
-    .projects2 a img {
+    .projects2-1 {
+        width: 90%;
+    }
+
+    .projects a img {
         margin-right: 15px;
         width: 90%;
         box-shadow: 0px 0px 10px 0px black;
@@ -367,5 +507,30 @@ a:hover {
     .footer {
         width: 71%;
         font-size: 9px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .moreoverMyself {
+        margin-left: 0px;
+        margin: 0;
+    }
+
+    #moreoverMyselfPara {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .projects2-1 {
+        width: 82%;
+    }
+
+    #projectsAbout {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .projects a img {
+        margin-right: 24px;
     }
 }
