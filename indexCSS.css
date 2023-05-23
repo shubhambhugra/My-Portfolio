@@ -207,6 +207,10 @@ a:hover {
     font-size: 1.1rem;
 }
 
+#scanDiv {
+    margin-top: 2%;
+}
+
 .projects2-1 {
     padding-top: 18px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -266,6 +270,7 @@ a:hover {
     .mainHome {
         margin-left: 20%;
     }
+
 }
 
 @media screen and (max-width:1250px) {
@@ -277,6 +282,7 @@ a:hover {
         width: 60%;
         margin-left: 25px;
     }
+
 }
 
 @media screen and (max-width:1200px) {
@@ -433,13 +439,22 @@ a:hover {
         border-radius: 2%;
     }
 
+    .projects a img {
+        width: 85%;
+        margin-right: 35px;
+    }
+
+    .projects3 li {
+        font-size: 12px;
+    }
+
     .projects3 {
         width: 82%;
         margin-left: 14px;
     }
 
     .moreoverMyself h2 {
-        font-size: 15.8px;
+        font-size: 17.8px;
         margin-right: 25px;
     }
 
